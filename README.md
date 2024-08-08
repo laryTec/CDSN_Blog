@@ -6,13 +6,10 @@
 
 - [安裝](#安裝)
 - [Docker](#docker)
-- [API 文檔](#api-文檔)
-- [貢獻](#貢獻)
-- [許可證](#許可證)
 
 ## 安裝
 
-1. clone 此儲存庫：
+1. GitHub：
    ```bash
    git clone https://github.com/laryTec/CDSN_Blog.git
 
