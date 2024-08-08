@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}註冊{% endblock %}
+{% block main %}
+    <div style="max-width: 400px" class="m-auto">
+        <h1>請註冊</h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label>帳號</label>
+                <input type="text" name="username" class="form-control" placeholder="帳號">
+            </div>
+            <div class="mb-3">
+                <label>email</label>
+                <input type="email" name="email" class="form-control" placeholder="email">
+            </div>
+            <div class="mb-3">
+                <label>驗證碼</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="功能開發中...."
+                           aria-label="Recipient's username" aria-describedby="button-addon2" disabled>
+                    <button class="btn btn-outline-secondary" type="button" disabled>傳送驗證碼</button>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label>密碼</label>
+                <input type="password" name="password" class="form-control" placeholder="密碼">
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary w-100">立即註冊</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
